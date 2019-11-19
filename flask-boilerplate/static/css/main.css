@@ -1,0 +1,112 @@
+/**
+ * @file
+ * Main stylesheet file.
+ */
+
+/*****************************************************************************
+ * Main elements
+ ****************************************************************************/
+html {
+  overflow-y: scroll;
+}
+a {
+  cursor: pointer;
+}
+::selection {
+  background: #555;
+  color: #fff;
+}
+::-moz-selection {
+  background: #555;
+  color: #fff;
+}
+::-webkit-selection {
+  background: #555;
+  color: #fff;
+}
+/* Main elements end */
+
+/*****************************************************************************
+ * Various other styles
+ ****************************************************************************/
+body {
+  font-family: "lato", sans-serif;
+}
+.hacker-list {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+h2 {
+  font-size: 50px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+/* .responsive-table { */
+li {
+  border-radius: 3px;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.table-header {
+  background-color: #95a5a6;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.table-row {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+.score {
+  flex-basis: 10%;
+}
+.topic_score {
+  flex-basis: 15%;
+}
+/* .title {
+  flex-basis: 40%;
+} */
+.full_link {
+  flex-basis: 75%;
+}
+/* .col-4 {
+  flex-basis: 25%;
+} */
+
+.image_button.active {
+  border: 3px solid red;
+}
+/* @media all and (max-width: 767px) {
+  .table-header {
+    display: none;
+  }
+  .table-row {
+  }
+  li {
+    display: block;
+  }
+  .col {
+    flex-basis: 100%;
+  }
+  .col {
+    display: flex;
+    padding: 10px 0;
+    &:before {
+      color: #6c7a89;
+      padding-right: 10px;
+      content: attr(data-label);
+      flex-basis: 50%;
+      text-align: right;
+    } */
+/* } */
+/* } */
+/* } */
+/* Various other styles end */

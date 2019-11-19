@@ -1,0 +1,231 @@
+{% extends 'layouts/main.html' %} {% block title %}Home{% endblock %} {% block
+content %}
+
+<!-- <div id="hacker-list">
+  <input class="search" />
+  <span class="sort" data-sort="name">Sort by name</span>
+  <span class="sort" data-sort="city">Sort by city</span>
+
+  <ul class="list">
+    <li>
+      <h3 class="name">Jonny</h3>
+      <p class="city">Stockholm</p>
+    </li>
+    <li>
+      <h3 class="name">Jonas</h3>
+      <p class="city">Berlin</p>
+    </li>
+  </ul>
+</div> -->
+
+<div id="hacker-list">
+  <!-- <input class="search" /> -->
+  <!-- <button class="sort" data-sort="score">
+    Sort
+  </button> -->
+  <img
+    src="static/img/baby.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Newborn Child"
+  />
+  <img
+    src="static/img/family.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Family"
+  />
+  <img
+    src="static/img/medical.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Medical"
+  />
+  <img
+    src="static/img/food.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Food"
+  />
+  <img
+    src="static/img/party.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Party Hard"
+  />
+  <img
+    src="static/img/tech.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Technology"
+  />
+  <img
+    src="static/img/crime.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Crime & Punishment"
+  />
+  <img
+    src="static/img/ocean.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="The Ocean"
+  />
+  <img
+    src="static/img/wilderness.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Wilderness"
+  />
+  <img
+    src="static/img/neighbor.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Neighborhood"
+  />
+  <img
+    src="static/img/house.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="In The House"
+  />
+
+  <br />
+
+  <img
+    src="static/img/facility.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Experimental Facility"
+  />
+  <img
+    src="static/img/drive.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Automotive"
+  />
+  <img
+    src="static/img/school.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Schools Out Forever"
+  />
+
+  <img
+    src="static/img/confessional.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="True Confessional"
+  />
+  <img
+    src="static/img/static.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="What Was That Sound?"
+  />
+
+  <img
+    src="static/img/realize.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Contemplation"
+  />
+  <img
+    src="static/img/subtle.jpeg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Subtle Cues"
+  />
+  <img
+    src="static/img/bed.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Night Terrors"
+  />
+
+  <img
+    src="static/img/violence.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Violent Action"
+  />
+  <img
+    src="static/img/evil.jpg"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Evil Spirit"
+  />
+  <img
+    src="static/img/blood.png"
+    width="100"
+    height="100"
+    class="image_button"
+    title="Bones & Flesh"
+  />
+  <!-- <span class="sort" data-sort="col col-3">Sort by Amount</span> -->
+  <!-- <span class="sort" data-sort="col col-2">Sort by ciCustomer Namety</span> -->
+
+  <h2>Top Stories from r/NoSleep</h2>
+  <ul class="header">
+    <li class="table-header">
+      <div class="score">Upvotes</div>
+      <div class="topic_score">Topic Score</div>
+      <div class="full_link">Title</div>
+      <!-- <div class="col col-3">x</div>
+      <div class="col col-4">y</div> -->
+    </li>
+  </ul>
+  <ul class="list">
+    <!-- <li class="table-header">
+      <div class="col col-1">Score</div>
+      <div class="col col-2">Title</div>
+      <div class="col col-3">x</div>
+      <div class="col col-4">y</div>
+    </li> -->
+    <!-- <li class="table-row">
+      <div class="score" data-label="Score">42235</div>
+      <a href="http://javve.com" class="link name">Jonny</a>
+    </li> -->
+    <!-- <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42442</div>
+      <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+      <div class="col col-3" data-label="Amount">$220</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42257</div>
+      <div class="col col-2" data-label="Customer Name">John Smith</div>
+      <div class="col col-3" data-label="Amount">$341</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li>
+    <li class="table-row">
+      <div class="col col-1" data-label="Job Id">42311</div>
+      <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+      <div class="col col-3" data-label="Amount">$115</div>
+      <div class="col col-4" data-label="Payment Status">Pending</div>
+    </li> -->
+  </ul>
+</div>
+
+{% endblock %}
