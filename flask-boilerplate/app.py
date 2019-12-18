@@ -12,9 +12,6 @@ import numpy as np
 import pandas as pd
 
 # ---------- MODEL IN MEMORY ----------------#
-
-# Read the scientific data on breast cancer survival,
-# Build a LogisticRegression predictor on it
 reddit = pd.read_pickle("../../resources/pickles/scores_df.pkl")
 
 # ----------------------------------------------------------------------------#
@@ -88,16 +85,10 @@ def score():
     # Get decision score for our example that came with the request
     print(flask.request.json)
     data = flask.request.json
-    # x = np.matrix(data["example"])
-    # score = PREDICTOR.predict_proba(x)
-    # Put the result in a nice dict so we can send it as json
-    # topic_filter=['Newborn Child']
     topic_filter = data["topics"]
     top_n = 10
 
-    # results = {"score": 60, "title":'scary', 'link':'https://reddit.com/r/nosleep'}
-    # results = reddit[['score','title','full_link']].sort_values(by=['score'], ascending=False).head(5).to_json(orient='records')
-    # results = reddit.assign(f = reddit[topic_filter].sum()*reddit['score']).sort_values('f', ascending=False).drop('f', axis=1).head(5).to_json(orient='records')
+    # Score based on topic weights boosted by "virality" (natural log of upvotes)
     df = (
         reddit.assign(
             topic_score=(0.001 + reddit[topic_filter].sum(axis=1))
